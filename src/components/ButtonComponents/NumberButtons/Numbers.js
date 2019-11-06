@@ -14,14 +14,17 @@ const Numbers = () => {
   const [numberState, setNumberState] = useState(numbers);
 
 const divStyle = {
-  backgroundColor: 'blue',
   display: 'flex',
-  flexDirection: 'column', 
+  justifyContent: 'space-between',
+  flexWrap: 'wrap',
+  width: '250px',
+  height: '400px',
+  margin: '2rem',
 };
 
   return (
     
-    <div className="random" style={divStyle}>;
+    <div className="numberStyle" style={divStyle}>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
